@@ -1,0 +1,3 @@
+tensorflow
+pandas
+confluent_kafka

@@ -16,7 +16,7 @@ def produce_meessages(producer, topic, data_path):
         message = row.to_json()
         producer.produce(topic, message, callback=acked)
         producer.poll(0)
-        time.sleep(1)
+        time.sleep(3)
 
 
 conf = {"bootstrap.servers": "localhost:9092", "client.id": "producer"}
